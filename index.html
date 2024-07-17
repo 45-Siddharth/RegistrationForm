@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="margin col-12 col-md-6 col-lg-6">
+                    <img src="https://res.cloudinary.com/dugs6k8rw/image/upload/v1721207548/technohacks_logo-removebg-preview_yagsly.png" class="w-50">
+                    <div class="m-4">
+                        <h1 class="head">TECHNO<span style="color:rgb(204, 36, 204)">HACKS</span></h1>
+                        <h2 class="head">EDUTECH</h2>
+                        <p class="caption">LET'S GROW TOGETHER</p>
+                    </div>
+                    <div class="ml-4 mt-5">
+                        <h3 class="web">WEB DEVELOPMENT</h3>
+                        <h3 class="web">INTERNSHIP</h3>
+                    </div>
+                    <div class="ml-4 mt-5">
+                        <h4 style="font-family: Bree Serif;">Registration Form</h4>
+                        <p style="font-family: Roboto;">Develop a registration form for a website or app,complete with input validation and error messages.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <form class="bg-light mt-5 p-4 m-3 form" id="Myform">
+                        <h1 class="main-head text-center">Registration Form</h1>
+                        <div class="m-2">
+                            <label for="fname" class="label" style="color:gray;">First Name :</label>
+                            <input type="text" id="fname" class="form-control">
+                            <p id="ferror"></p>
+                        </div>
+                        <div class="m-2">
+                            <label for="lname" class="label" style="color:gray;">Last Name :</label>
+                            <input type="text" id="lname" class="form-control">
+                            <p id="lerror"></p>
+                        </div>
+                        <div class="m-2">
+                            <label for="pass" class="label" style="color:gray;">Password :</label>
+                            <input type="password" id="pass" class="form-control">
+                            <p id="perror"></p>
+                        </div>
+                        <div class="m-2">
+                            <label for="conpass" class="label" style="color:gray;">Confirm Password :</label>
+                            <input type="password" id="conpass" class="form-control">
+                            <p id="cperror"></p>
+                        </div>
+                        <div class="m-1">
+                            <input type="radio" id="male" name="gender" value="Male" checked>
+                            <label for="male" class="m-1" style="color:gray;font-family: Roboto;">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female" class="m-1" style="color:gray;font-family: Roboto;">Female</label>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other" style="color:gray;font-family: Roboto;">Other</label>
+                        </div>
+                        <label for="cal" class="m-1 mb-2 label" style="color:gray;">Date of Birth :</label>
+                        <input type="date" id="cal" />
+                        <div class="m-2">
+                            <label for="email" class="label" style="color:gray;">Email Address :</label>
+                            <input type="text" id="email" class="form-control">
+                            <p id="emerror"></p>
+                        </div>
+                        <div class="m-2">
+                            <label for="phno" class="label" style="color:gray;">Phone Number :</label>
+                            <input type="text" id="phno" class="form-control">
+                            <p id="pherror"></p>
+                        </div>
+                        <div class="m-2">
+                            <label for="address" class="label" style="color:gray;">Address :</label><br>
+                            <textarea id="address" rows="5" cols="45"></textarea>
+                            <p id="adderror"></p>
+                        </div>
+                        <hr />
+                        <p>Simply state that by agreeing to your website terms and conditions, users agree that: You own these marks and ideas They will not sell, modify, rent, loan, share, or distribute your content in any way.</p>
+                        <div class="m-2">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="label"> Agreed to terms and conditions</label>
+                        </div>
+                        <button type="submit" id="submit" class="btn text-light w-100" style="background-color: rgb(204, 36, 204);font-family: Roboto;">Register</button>
+                        <p id="result"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
+</body>
+<script src="index.js"></script>
+
+</html>
